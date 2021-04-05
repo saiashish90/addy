@@ -1,5 +1,5 @@
 [[redirects]]
   from = "/*"
   to = "https://www.canva.com/design/DAEauePzST4/9UIf5L6BIedqK2K-A38UsQ/view?website#2:splat"
-  status = 301
+  status = 200
   force = true
