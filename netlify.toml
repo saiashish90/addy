@@ -1,6 +1,5 @@
-
 [[redirects]]
   from = "/*"
   to = "/home/#2"
   status = 301
-  force = false
+  force = true
