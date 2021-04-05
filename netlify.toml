@@ -1,12 +1,5 @@
-
-[[redirects]]
-  from = "https://www.adithic.site/*"
-  to = "https://adithic.netlify.app/#2"
-  status = 200
-  force = true
-
 [[redirects]]
   from = "/*"
-  to = "https://www.canva.com/design/DAEauePzST4/9UIf5L6BIedqK2K-A38UsQ/view?website:splat"
+  to = "https://www.canva.com/design/DAEauePzST4/9UIf5L6BIedqK2K-A38UsQ/view?website:#2"
   status = 200
   force = true
