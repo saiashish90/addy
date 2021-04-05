@@ -1,6 +1,6 @@
 
 [[redirects]]
-  from = "/"
+  from = "/*"
   to = "/#2"
   status = 200
   force = false
