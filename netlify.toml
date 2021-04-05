@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "https://www.adithic.site/*"
+  from = "https://www.adithic.site/"
   to = "https://www.adithic.site/#2"
   status = 301
   force = true
