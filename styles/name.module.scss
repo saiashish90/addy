@@ -1,0 +1,57 @@
+@font-face {
+  font-family: Bebas;
+  src: url("../public/bebas2.woff2");
+}
+@font-face {
+  font-family: Negra;
+  src: url("../public/negra.woff2");
+}
+$name: Bebas;
+$year: Negra;
+$name-color: #a95a34;
+%negra {
+  font-family: $year;
+  text-transform: uppercase;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+  height: 100vh;
+}
+.name {
+  display: flex;
+  font-family: $name;
+  font-size: 15vw;
+  line-height: 80%;
+  color: $name-color;
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+.graphic {
+  display: flex;
+  flex-direction: column;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  transform: translate(-60%, -80%);
+  div {
+    display: flex;
+    flex-direction: column;
+    max-width: 8vw;
+  }
+}
+.showreel {
+  @extend %negra;
+  display: flex;
+  font-size: 2.5vw;
+}
+.vector {
+  width: 8vw;
+}
+.year {
+  @extend %negra;
+  display: flex;
+  margin-left: auto;
+  font-size: 1vw;
+}
