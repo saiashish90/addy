@@ -44,6 +44,7 @@ $name-color: #a95a34;
     grid-row-start: 1;
     grid-column-start: 1;
     line-height: 0.8;
+    z-index: 1;
     transform: translate(var(--tx), var(--ty));
     span {
       @extend %negra;
