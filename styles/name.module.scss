@@ -12,7 +12,17 @@ $name-color: #a95a34;
   grid-template-columns: 1fr;
   place-items: center;
   height: 100vh;
+  --tx: -35%;
+  --ty: -85%;
+  --showreel: 3.5vw;
+  --div-width: 10vw;
+  --year: 2vw;
   @include xs {
+    --tx: 0%;
+    --ty: 0%;
+    --showreel: 10vw;
+    --div-width: 35vw;
+    --year: 8vw;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -34,40 +44,24 @@ $name-color: #a95a34;
     grid-row-start: 1;
     grid-column-start: 1;
     line-height: 0.8;
-    transform: translate(-35%, -85%);
-    @include xs {
-      transform: translateY(0%);
-      margin-top: 1rem;
-    }
+    transform: translate(var(--tx), var(--ty));
     span {
       @extend %negra;
       display: flex;
-      font-size: 3.5vw;
-      @include xs {
-        font-size: 10vw;
-      }
+      font-size: max(var(--showreel), 3.5vw);
     }
     div {
       display: flex;
       flex-direction: column;
-      width: 10vw;
-      @include xs {
-        width: 35vw;
-      }
+      width: max(var(--div-width), 10vw);
       img {
-        width: 10vw;
-        @include xs {
-          width: 35vw;
-        }
+        width: max(var(--div-width), 10vw);
       }
       span {
         @extend %negra;
         display: flex;
         margin-left: auto;
-        font-size: 2vw;
-        @include xs {
-          font-size: 8vw;
-        }
+        font-size: max(var(--year), 2vw);
       }
     }
   }
