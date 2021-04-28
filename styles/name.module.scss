@@ -1,3 +1,5 @@
+@import "mediaquery.scss";
+
 @font-face {
   font-family: Bebas;
   src: url("../public/bebas2.woff2");
@@ -16,42 +18,51 @@ $name-color: #a95a34;
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
   place-items: center;
   height: 100vh;
-}
-.name {
-  display: flex;
-  font-family: $name;
-  font-size: 15vw;
-  line-height: 80%;
-  color: $name-color;
-  grid-row-start: 1;
-  grid-column-start: 1;
-}
-.graphic {
-  display: flex;
-  flex-direction: column;
-  grid-row-start: 1;
-  grid-column-start: 1;
-  transform: translate(-60%, -80%);
-  div {
+  @include xs {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 12vw;
+  }
+  .name {
+    display: flex;
+    font-family: $name;
+    font-size: 15vw;
+    line-height: 80%;
+    color: $name-color;
+    grid-row-start: 1;
+    grid-column-start: 1;
+  }
+  .graphic {
     display: flex;
     flex-direction: column;
-    max-width: 8vw;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    transform: translate(-35%, -50%);
+    @include xs {
+      transform: translateY(0%);
+    }
+    span {
+      @extend %negra;
+      display: flex;
+      font-size: clamp(3.5vw, 3.5vw, 10vw);
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      width: clamp(10vw, 10vw, 35vw);
+      img {
+        width: clamp(10vw, 10vw, 35vw);
+      }
+      span {
+        @extend %negra;
+        display: flex;
+        margin-left: auto;
+        font-size: clamp(2vw, 2vw, 8vw);
+      }
+    }
   }
-}
-.showreel {
-  @extend %negra;
-  display: flex;
-  font-size: 2.5vw;
-}
-.vector {
-  width: 8vw;
-}
-.year {
-  @extend %negra;
-  display: flex;
-  margin-left: auto;
-  font-size: 1vw;
 }

@@ -12,10 +12,10 @@ export default function home() {
             </span>
           </div>
           <div className={name.graphic}>
-            <div className={name.showreel}>showreel</div>
-            <div>
+            <span className={name.showreel}>showreel</span>
+            <div> 
               <img className={name.vector} src="a.svg" alt="svg" />
-              <div className={name.year}>2021</div>
+              <span className={name.year}>2021</span>
             </div>
           </div>
         </div>
