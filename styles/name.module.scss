@@ -1,13 +1,5 @@
-@import "mediaquery.scss";
-
-@font-face {
-  font-family: Bebas;
-  src: url("../public/bebas2.woff2");
-}
-@font-face {
-  font-family: Negra;
-  src: url("../public/negra.woff2");
-}
+@import "./partials/_mediaquery.scss";
+@import "./partials/_fonts.scss";
 $name: Bebas;
 $year: Negra;
 $name-color: #a95a34;
@@ -41,27 +33,41 @@ $name-color: #a95a34;
     flex-direction: column;
     grid-row-start: 1;
     grid-column-start: 1;
-    transform: translate(-35%, -50%);
+    line-height: 0.8;
+    transform: translate(-35%, -85%);
     @include xs {
       transform: translateY(0%);
+      margin-top: 1rem;
     }
     span {
       @extend %negra;
       display: flex;
-      font-size: clamp(3.5vw, 3.5vw, 10vw);
+      font-size: 3.5vw;
+      @include xs {
+        font-size: 10vw;
+      }
     }
     div {
       display: flex;
       flex-direction: column;
-      width: clamp(10vw, 10vw, 35vw);
+      width: 10vw;
+      @include xs {
+        width: 35vw;
+      }
       img {
-        width: clamp(10vw, 10vw, 35vw);
+        width: 10vw;
+        @include xs {
+          width: 35vw;
+        }
       }
       span {
         @extend %negra;
         display: flex;
         margin-left: auto;
-        font-size: clamp(2vw, 2vw, 8vw);
+        font-size: 2vw;
+        @include xs {
+          font-size: 8vw;
+        }
       }
     }
   }
