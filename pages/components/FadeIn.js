@@ -1,7 +1,7 @@
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
-export default function FadeIn({ children }) {
+export default function FadeIn({ className, children }) {
   const variant = {
     visible: { opacity: 1, transition: { delay: 0.1, duration: 0.6 } },
     hidden: { opacity: 0, transition: { delay: 0.1, duration: 0.6 } },
@@ -17,7 +17,12 @@ export default function FadeIn({ children }) {
   }, [controls, inView]);
 
   return (
-    <motion.div ref={ref} animate={controls} initial="hidden" variants={variant}>
+    <motion.div
+      className={className}
+      ref={ref}
+      animate={controls}
+      initial="hidden"
+      variants={variant}>
       {children}
     </motion.div>
   );

@@ -6,3 +6,11 @@
   font-family: Negra;
   src: url("../../public/negra.woff2");
 }
+%negra {
+  font-family: Negra;
+  text-transform: uppercase;
+}
+%bebas {
+  font-family: Bebas;
+  text-transform: uppercase;
+}

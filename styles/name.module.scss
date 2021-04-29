@@ -1,12 +1,7 @@
 @import "./partials/_mediaquery.scss";
 @import "./partials/_fonts.scss";
-$name: Bebas;
-$year: Negra;
-$name-color: #a95a34;
-%negra {
-  font-family: $year;
-  text-transform: uppercase;
-}
+@import "./partials/_variables.scss";
+
 .container {
   display: grid;
   grid-template-columns: 1fr;
