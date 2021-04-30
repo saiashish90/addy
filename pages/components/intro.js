@@ -7,13 +7,7 @@ export default function second() {
       <div className={intro.container}>
         <FadeIn className={intro.picture}>
           <div className={intro.line}></div>
-          <Image
-            src="/into_pic_addy.jpg"
-            alt="adithi"
-            width={500}
-            height={600}
-            layout="intrinsic"
-          />
+          <Image src="/2nd-addy.jpg" alt="adithi" width={500} height={600} layout="intrinsic" />
         </FadeIn>
         <FadeIn className={intro.info}>
           <span>

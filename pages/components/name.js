@@ -14,7 +14,7 @@ export default function home() {
         <div className={name.graphic}>
           <span className={name.showreel}>showreel</span>
           <div>
-            <img className={name.vector} src="a.svg" alt="svg" />
+            <img className={name.vector} src="1st-lines.svg" alt="svg" />
             <span className={name.year}>2021</span>
           </div>
         </div>

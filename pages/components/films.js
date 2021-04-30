@@ -8,7 +8,7 @@ export default function third() {
         <span>Earliest to</span>
         <span> current</span>
       </div>
-      <img src="films.svg" alt="line" />
+      <img src="3rd-films.svg" alt="line" />
     </FadeIn>
   );
 }

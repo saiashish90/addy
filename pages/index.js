@@ -1,6 +1,7 @@
 import Name from "./components/name";
 import Intro from "./components/intro";
 import Films from "./components/films";
+import Fake from "./components/fake";
 import ReactPageScroller from "react-page-scroller";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <Name />
       <Intro />
       <Films />
+      <Fake />
     </ReactPageScroller>
   );
 }

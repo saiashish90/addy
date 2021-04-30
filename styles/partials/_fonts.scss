@@ -1,12 +1,18 @@
 @font-face {
   font-family: Bebas;
-  src: url("../../public/bebas2.woff2");
+  src: url("../../public/fonts/bebas2.woff2");
 }
 @font-face {
   font-family: Negra;
-  src: url("../../public/negra.woff2");
+  src: url("../../public/fonts/negra.woff2");
 }
+@font-face {
+  font-family: HkGrotesk;
+  src: url("../../public/fonts/HKGrotesk-Light.otf");
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Assistant&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mansalva&display=swap");
 %negra {
   font-family: Negra;
   text-transform: uppercase;
@@ -17,4 +23,10 @@
 }
 %assistant {
   font-family: "Assistant", sans-serif;
+}
+%mansalva {
+  font-family: "Mansalva", cursive;
+}
+%grotesk {
+  font-family: HkGrotesk;
 }
