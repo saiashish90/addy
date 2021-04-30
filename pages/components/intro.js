@@ -15,7 +15,7 @@ export default function second() {
             layout="intrinsic"
           />
         </FadeIn>
-        <div className={intro.info}>
+        <FadeIn className={intro.info}>
           <span>
             Adithi&nbsp;
             <br />
@@ -27,7 +27,7 @@ export default function second() {
             I study and create to be able to tell stories better. I am a student of communication
             and a video editor, both by passion.
           </p>
-        </div>
+        </FadeIn>
       </div>
     </section>
   );

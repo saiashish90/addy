@@ -1,0 +1,38 @@
+@import "./partials/fonts";
+@import "./partials/mediaquery";
+@import "./partials/variables";
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  span {
+    @extend %bebas;
+    font-size: 28vw;
+    @include xs {
+      font-size: 40vw;
+    }
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 0.8;
+    span {
+      @extend %negra;
+      font-size: 3vw;
+      @include xs {
+        font-size: 8vw;
+      }
+    }
+  }
+  img {
+    margin-top: 0.6rem;
+    width: 20vw;
+    @include xs {
+      width: 45vw;
+    }
+  }
+}

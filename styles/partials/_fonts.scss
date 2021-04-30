@@ -6,6 +6,7 @@
   font-family: Negra;
   src: url("../../public/negra.woff2");
 }
+@import url("https://fonts.googleapis.com/css2?family=Assistant&display=swap");
 %negra {
   font-family: Negra;
   text-transform: uppercase;
@@ -13,4 +14,7 @@
 %bebas {
   font-family: Bebas;
   text-transform: uppercase;
+}
+%assistant {
+  font-family: "Assistant", sans-serif;
 }
