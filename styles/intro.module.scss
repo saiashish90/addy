@@ -2,6 +2,7 @@
 @import "./partials/_variables.scss";
 @import "./partials/fonts";
 .container {
+  overflow: scroll;
   background-color: $bg-dark;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -53,13 +54,20 @@
     justify-content: flex-start;
     align-items: flex-start;
     padding: 0rem 3rem;
+    @include sm {
+      padding-left: 1rem;
+    }
 
     span:nth-child(1) {
       @extend %bebas;
       color: $name-color;
-      font-size: 5vw;
+      font-size: 3vw;
       line-height: 0.9;
-      margin-bottom: 5.5rem;
+      margin-bottom: 5.5vh;
+      @include sm {
+        font-size: 6vw;
+        margin-bottom: 0.5rem;
+      }
       @include xs {
         font-size: 10vw;
         margin-bottom: 0.5rem;
@@ -75,7 +83,11 @@
       @extend %assistant;
       color: white;
       font-size: 1.66vw;
-      margin-bottom: 2rem;
+      margin-bottom: 2vh;
+      @include sm {
+        font-size: 3vw;
+        margin-bottom: 0.5rem;
+      }
       @include xs {
         font-size: 5vw;
         margin-bottom: 0.5rem;
@@ -87,6 +99,10 @@
       text-transform: uppercase;
       font-weight: bold;
       margin-bottom: 0.5rem;
+      @include sm {
+        font-size: 3vw;
+        margin-bottom: 0.5rem;
+      }
       @include xs {
         font-size: 8vw;
         margin-bottom: 0.5rem;
@@ -99,6 +115,9 @@
       font-size: 1.45vw;
       font-weight: normal;
       width: clamp(30ch, 60%, 75ch);
+      @include sm {
+        font-size: 3vw;
+      }
       @include xs {
         font-size: 4vw;
       }

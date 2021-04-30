@@ -2,6 +2,7 @@
 @import "./partials/mediaquery";
 @import "./partials/variables";
 .container {
+  overflow: scroll;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 3fr 1fr;
@@ -72,26 +73,20 @@
       }
       span {
         @extend %grotesk;
-        font-size: 1.75vw;
+        font-size: 1.3vw;
         margin: 10px 0px;
         @include sm {
-          font-size: 3vw;
-        }
-        @include xs {
-          font-size: 5vw;
+          font-size: 4vw;
         }
       }
       p {
         text-align: center;
-        line-height: 1.5;
+        line-height: 1.3;
         font-size: 1.75vw;
         width: clamp(30ch, 60%, 75ch);
         margin: 0;
         @include sm {
-          font-size: 3vw;
-        }
-        @include xs {
-          font-size: 5vw;
+          font-size: 4vw;
         }
       }
     }

@@ -3,6 +3,7 @@
 @import "./partials/_variables.scss";
 
 .container {
+  overflow: scroll;
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
