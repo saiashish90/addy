@@ -40,6 +40,7 @@
       align-items: center;
       justify-content: center;
     }
+
     .text {
       display: flex;
       flex-direction: column;
@@ -63,6 +64,11 @@
           margin-bottom: 2rem;
           transform: translateX(0vw);
         }
+        @include xs {
+          font-size: 10vw;
+          margin-bottom: 2rem;
+          transform: translateX(0vw);
+        }
       }
       span {
         @extend %grotesk;
@@ -71,9 +77,11 @@
         @include sm {
           font-size: 3vw;
         }
+        @include xs {
+          font-size: 5vw;
+        }
       }
       p {
-        @extend %grotesk;
         text-align: center;
         line-height: 1.5;
         font-size: 1.75vw;
@@ -81,6 +89,9 @@
         margin: 0;
         @include sm {
           font-size: 3vw;
+        }
+        @include xs {
+          font-size: 5vw;
         }
       }
     }
@@ -123,11 +134,7 @@
     grid-row-start: 3;
     height: 100px;
     @include sm {
-      grid-column-start: 1;
-      grid-row-start: 1;
-      width: 20vw;
-      transform: rotate(-45deg) translate(20%, 45%);
-      z-index: -1;
+      display: none;
     }
   }
 }

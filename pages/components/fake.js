@@ -1,7 +1,8 @@
 import fake from "../../styles/fake.module.scss";
+import FadeIn from "./FadeIn";
 export default function fourth() {
   return (
-    <div className={fake.container}>
+    <FadeIn className={fake.container}>
       <div className={fake.line}></div>
       <div className={fake.content}>
         <div className={fake.text}>
@@ -23,6 +24,6 @@ export default function fourth() {
         <div className={fake.linemobile}></div>
       </div>
       <img src="4th-lines.svg" alt="lines" />
-    </div>
+    </FadeIn>
   );
 }

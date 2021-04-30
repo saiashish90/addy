@@ -1,0 +1,52 @@
+@import "./partials/fonts";
+@import "./partials/mediaquery";
+@import "./partials/variables";
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: $bg-dark;
+  padding: 1rem 0rem;
+  span {
+    @extend %mansalva;
+    color: white;
+    font-size: 2vw;
+    @include sm {
+      font-size: 5vw;
+      margin-bottom: 1rem;
+    }
+  }
+  .video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0rem;
+    img {
+      align-self: start;
+      width: 40px;
+      transform: translate(-80%, 10%);
+    }
+    iframe {
+      width: 55vw;
+      height: calc(55vw * 9 / 16);
+      @include sm {
+        width: 80vw;
+        height: calc(80vw * 9 / 16);
+      }
+    }
+  }
+  p {
+    @extend %grotesk;
+    color: white;
+    font-size: clamp(20px, 1rem, 5rem);
+    word-spacing: 3px;
+    text-align: center;
+    width: 50%;
+    @include sm {
+      width: 80%;
+    }
+  }
+}
