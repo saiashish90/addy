@@ -56,11 +56,12 @@
     padding: 0rem 2rem;
     text-align: center;
     @include sm {
-      font-size: 3vw;
+      font-size: 4vw;
       margin-top: 3rem;
     }
     @include xs {
-      font-size: 4vw;
+      font-size: 5vw;
+      width: clamp(35ch, 50%, 75ch);
     }
   }
 }

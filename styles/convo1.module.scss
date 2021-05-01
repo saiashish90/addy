@@ -58,5 +58,9 @@
       width: 80%;
       font-size: 4vw;
     }
+    @include xs {
+      font-size: 5vw;
+      width: clamp(35ch, 50%, 75ch);
+    }
   }
 }

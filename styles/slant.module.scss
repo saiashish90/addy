@@ -1,0 +1,88 @@
+@import "./partials/fonts";
+@import "./partials/mediaquery";
+@import "./partials/variables";
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 5rem;
+  @include sm {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    padding-right: 1rem;
+    @include sm {
+      padding: 0rem;
+      width: 95%;
+      margin-bottom: 3rem;
+    }
+    .line {
+      background: black;
+      align-self: flex-start;
+      width: 70px;
+      height: 6px;
+      transform: translateY(-500%);
+    }
+    .ratio {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
+      iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    img {
+      width: 1vw;
+      align-self: flex-end;
+      transform: scale(8, 8) translate(5%, 5%);
+      z-index: 1;
+      @include sm {
+        transform: scale(15, 15) translate(5%, 5%);
+      }
+    }
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    @include sm {
+      width: 90%;
+    }
+    span {
+      @extend %mansalva;
+      font-size: 2vw;
+      text-align: center;
+      line-height: 1.1;
+      @include sm {
+        font-size: 5vw;
+      }
+      @include xs {
+        font-size: 6vw;
+      }
+    }
+    p {
+      @extend %grotesk;
+      font-size: 1.3vw;
+      text-align: center;
+      width: clamp(35ch, 50%, 75ch);
+      @include sm {
+        font-size: 4vw;
+      }
+      @include xs {
+        font-size: 5vw;
+      }
+    }
+  }
+}

@@ -7,7 +7,9 @@ export default function sixth() {
         <img className={year.img_top} src="1st-lines.svg" alt="lines" />
         <div className={year.ratio}>
           <iframe
+            title="drive video player for 1 year video"
             src="https://drive.google.com/file/d/1UxCGhQgTg56Rw-8UGRVU6xV2yeG2bAjt/preview"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             frameBorder="0"
           />
         </div>

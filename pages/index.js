@@ -6,7 +6,10 @@ import Fake from "./components/fake";
 import Painting from "./components/convo1";
 import Year from "./components/year";
 import Pooja from "./components/convo2";
-import IGTV1 from "./components/igtv1.js";
+import IGTV1 from "./components/igtv1";
+import IGTV2 from "./components/igtv2";
+import Slant from "./components/slant";
+import Contact from "./components/contact.js";
 // Packages needs
 import { isMobile } from "react-device-detect";
 import Smooth from "./components/SmoothScroll";
@@ -27,6 +30,9 @@ export default function Home() {
       <Year />
       <Pooja />
       <IGTV1 />
+      <IGTV2 />
+      <Slant />
+      <Contact />
     </Wrapper>
   );
 }

@@ -8,7 +8,9 @@ export default function fifth() {
         <div className={convo.video}>
           <img src="5th-lines.svg" alt="lines" />
           <iframe
+            title="drive video player for convo"
             src="https://drive.google.com/file/d/1qoLWYhcvh_LiDJKb9F8EWG7LX4hrZoOD/preview"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             frameBorder="0"
           />
           <div className={convo.line}></div>
