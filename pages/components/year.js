@@ -8,7 +8,7 @@ export default function sixth() {
         <div className={year.ratio}>
           <iframe
             src="https://drive.google.com/file/d/1UxCGhQgTg56Rw-8UGRVU6xV2yeG2bAjt/preview"
-            frameborder="0"
+            frameBorder="0"
           />
         </div>
         <img className={year.img_bottom} src="1st-lines.svg" alt="lines" />

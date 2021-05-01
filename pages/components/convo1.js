@@ -9,7 +9,7 @@ export default function fifth() {
           <img src="5th-lines.svg" alt="lines" />
           <iframe
             src="https://drive.google.com/file/d/1qoLWYhcvh_LiDJKb9F8EWG7LX4hrZoOD/preview"
-            frameborder="0"
+            frameBorder="0"
           />
           <div className={convo.line}></div>
         </div>

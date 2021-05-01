@@ -6,20 +6,16 @@ import Fake from "./components/fake";
 import Painting from "./components/convo1";
 import Year from "./components/year";
 // Packages needs
-import ReactPageScroller from "react-page-scroller";
 import { isMobile } from "react-device-detect";
-
+import Smooth from "./components/SmoothScroll";
+// Index
 export default function Home() {
   const Wrapper = ({ children, condition, wrapper1, wrapper2 }) =>
     condition ? wrapper1(children) : wrapper2(children);
-  const desktop = (children) => (
-    <ReactPageScroller animationTimer={750} animationTimerBuffer={750}>
-      {children}
-    </ReactPageScroller>
-  );
-  const mobile = (children) => <>{children}</>;
+  const desktop = (children) => <Smooth>{children}</Smooth>;
+  const mobile = (children) => <Smooth>{children}</Smooth>;
   return (
-    <Wrapper condition={true} wrapper1={mobile} wrapper2={desktop}>
+    <Wrapper condition={isMobile} wrapper1={mobile} wrapper2={desktop}>
       <Name />
       <Intro />
       <Films />
