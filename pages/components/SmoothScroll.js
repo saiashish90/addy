@@ -50,7 +50,9 @@ export default function smoothscroll({ ease = 0.1, skewness = 5, children }) {
     const skew = velocity * skewness;
 
     //Assign skew and smooth scrolling to the scroll container
-    scrollContainer.current.style.transform = `translate3d(0, -${data.rounded}px, 0) skewY(${skew}deg)`;
+    if (scrollContainer.current) {
+      scrollContainer.current.style.transform = `translate3d(0, -${data.rounded}px, 0) skewY(${skew}deg)`;
+    }
 
     //loop vai raf
     requestAnimationFrame(() => skewScrolling());

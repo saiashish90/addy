@@ -5,10 +5,12 @@ import Films from "./components/films";
 import Fake from "./components/fake";
 import Painting from "./components/convo1";
 import Year from "./components/year";
+import Pooja from "./components/convo2";
 // Packages needs
 import { isMobile } from "react-device-detect";
 import Smooth from "./components/SmoothScroll";
 // Index
+// PLEASE CHANGE THIS LATER IS YOU ARE NT IMPLEMENTING FULLPAGEJS
 export default function Home() {
   const Wrapper = ({ children, condition, wrapper1, wrapper2 }) =>
     condition ? wrapper1(children) : wrapper2(children);
@@ -22,6 +24,7 @@ export default function Home() {
       <Fake />
       <Painting />
       <Year />
+      <Pooja />
     </Wrapper>
   );
 }
