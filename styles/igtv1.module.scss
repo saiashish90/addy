@@ -1,0 +1,66 @@
+@import "./partials/fonts";
+@import "./partials/mediaquery";
+@import "./partials/variables";
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  padding: 2rem;
+  span {
+    @extend %mansalva;
+    font-size: 3vw;
+    @include sm {
+      font-size: 6vw;
+      margin-bottom: 1rem;
+    }
+    @include xs {
+      font-size: 7vw;
+    }
+  }
+  .video {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    img {
+      height: 3vw;
+      align-self: flex-end;
+      transform: translate(-700%, 20%);
+      @include sm {
+        height: 8vw;
+        transform: translate(40%, 20%);
+      }
+    }
+    video {
+      width: 55%;
+      align-self: center;
+      @include sm {
+        width: 90%;
+      }
+    }
+    .line {
+      height: 7px;
+      width: 70px;
+      background-color: black;
+      transform: rotate(90deg) translate(-45%, -500%);
+      @include sm {
+        display: none;
+      }
+    }
+  }
+  p {
+    @extend %grotesk;
+    font-size: 1.3vw;
+    width: clamp(45ch, 50%, 80%);
+    padding: 0rem 2rem;
+    text-align: center;
+    @include sm {
+      font-size: 3vw;
+      margin-top: 3rem;
+    }
+    @include xs {
+      font-size: 4vw;
+    }
+  }
+}
