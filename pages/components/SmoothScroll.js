@@ -3,7 +3,7 @@ import smooth from "../../styles/smooth.module.scss";
 
 import useWindowSize from "../hooks/useWindowSize";
 
-export default function smoothscroll({ children }) {
+export default function smoothscroll({ ease = 0.1, skewness = 5, children }) {
   //Hook to grab window size
   const size = useWindowSize();
 
@@ -13,7 +13,7 @@ export default function smoothscroll({ children }) {
 
   // Configs
   const data = {
-    ease: 0.07,
+    ease: ease,
     current: 0,
     previous: 0,
     rounded: 0,
@@ -47,7 +47,7 @@ export default function smoothscroll({ children }) {
     const difference = data.current - data.rounded;
     const acceleration = difference / size.width;
     const velocity = +acceleration;
-    const skew = velocity * 5;
+    const skew = velocity * skewness;
 
     //Assign skew and smooth scrolling to the scroll container
     scrollContainer.current.style.transform = `translate3d(0, -${data.rounded}px, 0) skewY(${skew}deg)`;
