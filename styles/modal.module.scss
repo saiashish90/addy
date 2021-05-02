@@ -33,18 +33,16 @@
     height: 50%;
   }
   .close {
-    width: 1px;
-    height: 1px;
-    transform: scale(15, 15);
-    border-radius: 10px;
+    width: 3px;
+    height: 3px;
+    border-radius: 99px;
+    transform: scale3d(5, 5, 5);
     background: hsl(1, 100%, 60%);
     background-image: url("../public/close.svg");
     background-repeat: no-repeat;
+    background-position: center;
     background-size: contain;
     align-self: flex-end;
-    &:hover {
-      transform: scale(16, 16);
-    }
   }
   .send {
     position: relative;
