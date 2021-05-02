@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import smooth from "../../styles/smooth.module.scss";
 
-import useWindowSize from "./useWindowSize";
+import { useWindowSize } from "../hooks/useWindowSize";
 
 export default function smoothscroll({ ease = 0.1, skewness = 5, children }) {
   //Hook to grab window size
