@@ -2,13 +2,17 @@ import films from "../../styles/films.module.scss";
 import FadeIn from "./FadeIn";
 export default function third() {
   return (
-    <FadeIn className={films.container}>
-      <span>Films</span>
-      <div>
+    <div className={films.container}>
+      <FadeIn>
+        <span className={films.span}>Films</span>
+      </FadeIn>
+      <FadeIn>
         <span>Earliest to</span>
         <span> current</span>
-      </div>
-      <img src="3rd-films.svg" alt="line" />
-    </FadeIn>
+      </FadeIn>
+      <FadeIn>
+        <img className={films.img} src="3rd-films.svg" alt="line" />
+      </FadeIn>
+    </div>
   );
 }

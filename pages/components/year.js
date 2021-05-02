@@ -2,8 +2,8 @@ import year from "../../styles/year.module.scss";
 import FadeIn from "./FadeIn";
 export default function sixth() {
   return (
-    <FadeIn className={year.container}>
-      <div className={year.video}>
+    <div className={year.container}>
+      <FadeIn className={year.video}>
         <img className={year.img_top} src="1st-lines.svg" alt="lines" />
         <div className={year.ratio}>
           <iframe
@@ -14,8 +14,8 @@ export default function sixth() {
           />
         </div>
         <img className={year.img_bottom} src="1st-lines.svg" alt="lines" />
-      </div>
-      <div className={year.text}>
+      </FadeIn>
+      <FadeIn className={year.text}>
         <div className={year.line}></div>
         <span>
           I filmed 1 second
@@ -29,7 +29,7 @@ export default function sixth() {
           It was also significant as everyday seemed monotonous and tiring, but the documentation
           helped in differentiating it.
         </p>
-      </div>
-    </FadeIn>
+      </FadeIn>
+    </div>
   );
 }

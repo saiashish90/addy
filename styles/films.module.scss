@@ -2,13 +2,14 @@
 @import "./partials/mediaquery";
 @import "./partials/variables";
 .container {
+  background: white;
   overflow: scroll;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  span {
+  .span {
     @extend %bebas;
     font-size: 28vw;
     @include xs {
@@ -29,7 +30,7 @@
       }
     }
   }
-  img {
+  .img {
     margin-top: 0.6rem;
     width: 20vw;
     @include xs {

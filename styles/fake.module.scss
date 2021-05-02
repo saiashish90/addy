@@ -3,6 +3,7 @@
 @import "./partials/variables";
 .container {
   overflow: scroll;
+  background: white;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 3fr 1fr;
@@ -127,13 +128,15 @@
       }
     }
   }
-  img {
+  .img {
     justify-self: flex-end;
     grid-column-start: 2;
     grid-row-start: 3;
-    height: 100px;
     @include sm {
       display: none;
+    }
+    img {
+      height: 100px;
     }
   }
 }

@@ -2,6 +2,7 @@
 @import "./partials/mediaquery";
 @import "./partials/variables";
 .container {
+  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,7 +50,7 @@
       }
     }
   }
-  p {
+  .p {
     @extend %grotesk;
     font-size: 1.3vw;
     width: clamp(45ch, 50%, 80%);

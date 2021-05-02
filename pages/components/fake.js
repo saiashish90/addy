@@ -2,9 +2,9 @@ import fake from "../../styles/fake.module.scss";
 import FadeIn from "./FadeIn";
 export default function fourth() {
   return (
-    <FadeIn className={fake.container}>
-      <div className={fake.line}></div>
-      <div className={fake.content}>
+    <div className={fake.container}>
+      <FadeIn className={fake.line}></FadeIn>
+      <FadeIn className={fake.content}>
         <div className={fake.text}>
           <span className={fake.head}>PSA on fake news</span>
           <p>I made this film as a part of my final year Journalism project.</p>
@@ -22,8 +22,10 @@ export default function fourth() {
           </div>
         </div>
         <div className={fake.linemobile}></div>
-      </div>
-      <img src="4th-lines.svg" alt="lines" />
-    </FadeIn>
+      </FadeIn>
+      <FadeIn className={fake.img}>
+        <img src="4th-lines.svg" alt="lines" />
+      </FadeIn>
+    </div>
   );
 }
