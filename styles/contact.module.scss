@@ -8,12 +8,80 @@
   height: 100vh;
   background: $name-color;
   padding: 3rem;
+  @include sm {
+    flex-direction: column-reverse;
+    padding: 1rem;
+  }
   .text {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 5vw;
     width: 40%;
+    @include sm {
+      padding: 0rem;
+      width: 100%;
+      justify-content: flex-start;
+      margin-top: 2vw;
+    }
+    .h1 {
+      @extend %compacta;
+      font-weight: 400;
+      font-size: 6vw;
+      margin: 0rem;
+      color: black;
+      @include sm {
+        font-size: 10vw;
+      }
+      @include xs {
+        font-size: 15vw;
+      }
+    }
+    .h2 {
+      @extend %assistant;
+      font-size: 2vw;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: black;
+      margin: 0.5rem 0rem;
+      margin-top: 2vw;
+      @include sm {
+        font-size: 3.5vw;
+      }
+      @include xs {
+        margin-top: 5vw;
+        font-size: 6vw;
+      }
+    }
+    .h3 {
+      @extend %assistant;
+      font-size: 2vw;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: black;
+      margin: 0.5vw 0rem;
+      @include sm {
+        font-size: 3.5vw;
+      }
+      @include xs {
+        font-size: 6vw;
+      }
+    }
+    span {
+      @extend %assistant;
+      color: white;
+      font-size: 1.3vw;
+      @include sm {
+        font-size: 3vw;
+      }
+      @include xs {
+        font-size: 5vw;
+      }
+    }
+    button {
+      margin: 3vw 0rem;
+    }
   }
   .picture {
     display: flex;
@@ -21,11 +89,31 @@
     align-items: center;
     flex-direction: column;
     width: 60%;
-    .line {
-      height: 6px;
-      width: 70px;
-      background: white;
-      align-self: flex-end;
+    padding: 2vw;
+    @include sm {
+      width: 100%;
+      height: auto;
+      padding: 0rem;
+      margin-bottom: 2vw;
+    }
+    .vectop {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      img:nth-child(1) {
+        width: 1vw;
+        transform: scale(3, 3) translate(-30%, -10%) rotate(-90deg);
+        @include xs {
+          transform: scale(5, 5) translate(-30%, -10%) rotate(-90deg);
+        }
+      }
+      img:nth-child(2) {
+        width: 1vw;
+        transform: scale(3, 3) translate(45%, 0%);
+        @include xs {
+          transform: scale(5, 5) translate(45%, 0%);
+        }
+      }
     }
     img {
       border-radius: 10px;
@@ -34,6 +122,25 @@
         0 0px 33.4px -10px rgba(0, 0, 0, 0.058), 0 0px 80px -10px rgba(0, 0, 0, 0.08);
 
       width: 100%;
+    }
+    .vecbottom {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      img:nth-child(1) {
+        width: 1vw;
+        transform: scale(3, 3) translate(-40%, 0%) rotate(180deg);
+        @include xs {
+          transform: scale(5, 5) translate(-40%, 0%) rotate(180deg);
+        }
+      }
+      img:nth-child(2) {
+        width: 1vw;
+        transform: scale(3, 3) translate(40%, 0%) rotateX(180deg);
+        @include xs {
+          transform: scale(5, 5) translate(40%, 0%) rotateX(180deg);
+        }
+      }
     }
   }
 }

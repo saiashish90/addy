@@ -14,8 +14,12 @@
   font-family: Mansalva;
   src: url("../../public/fonts/Mansalva.woff2");
 }
+@font-face {
+  font-family: Compacta;
+  src: url("../../public/fonts/ac-compacta.woff2");
+}
 
-@import url("https://fonts.googleapis.com/css2?family=Assistant&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap");
 %negra {
   font-family: Negra;
   text-transform: uppercase;
@@ -32,4 +36,7 @@
 }
 %grotesk {
   font-family: HkGrotesk;
+}
+%compacta {
+  font-family: Compacta;
 }
