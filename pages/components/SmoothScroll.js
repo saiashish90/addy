@@ -3,7 +3,7 @@ import smooth from "../../styles/smooth.module.scss";
 
 import { useWindowSize } from "../../hooks/useWindowSize";
 
-export default function smoothscroll({ ease = 0.1, skewness = 5, children }) {
+export default function smoothscroll({ ease = 0.1, skewness = 0, children }) {
   //Hook to grab window size
   const size = useWindowSize();
 
