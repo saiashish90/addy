@@ -2,7 +2,6 @@
 @import "./partials/_variables.scss";
 @import "./partials/fonts";
 .container {
-  overflow: scroll;
   background-color: $bg-dark;
   display: grid;
   grid-template-columns: 1fr 1fr;
