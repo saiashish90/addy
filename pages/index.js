@@ -18,7 +18,7 @@ import Smooth from "./components/SmoothScroll";
 export default function Home() {
   const Wrapper = ({ children, condition, wrapper1, wrapper2 }) =>
     condition ? wrapper1(children) : wrapper2(children);
-  const desktop = (children) => <>{children}</>;
+  const desktop = (children) => <Smooth>{children}</Smooth>;
   const mobile = (children) => <Smooth ease={0.5}>{children}</Smooth>;
   return (
     <Wrapper condition={isMobile} wrapper1={mobile} wrapper2={desktop}>
