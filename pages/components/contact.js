@@ -8,7 +8,9 @@ export default function eleventh() {
         <span>adithi.chandrashekar@flame.edu.in</span>
         <span className={contact.h3}>Mobile</span>
         <span>+91 9110289347</span>
-        <button>Contact Me</button>
+        <button>
+          <span className={contact.but}>Contact Me!</span>
+        </button>
       </div>
       <div className={contact.picture}>
         <div className={contact.vectop}>
