@@ -4,11 +4,11 @@ export default function home() {
   return (
     <div className={name.container}>
       <FadeIn className={name.name}>
-        <span>
+        <h1>
           Adithi
           <br />
           Chandrashekar
-        </span>
+        </h1>
       </FadeIn>
       <FadeIn className={name.graphic}>
         <span className={name.showreel}>showreel</span>

@@ -33,6 +33,11 @@
     color: $name-color;
     grid-row-start: 1;
     grid-column-start: 1;
+    h1 {
+      font-size: 15vw;
+      line-height: 80%;
+      font-weight: normal;
+    }
   }
   .graphic {
     display: flex;

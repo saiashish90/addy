@@ -1,3 +1,4 @@
+import Head from "next/head";
 // Components
 import Name from "./components/name";
 import Intro from "./components/intro";
@@ -21,18 +22,26 @@ export default function Home() {
   const desktop = (children) => <Smooth>{children}</Smooth>;
   const mobile = (children) => <Smooth ease={0.5}>{children}</Smooth>;
   return (
-    <Wrapper condition={isMobile} wrapper1={mobile} wrapper2={desktop}>
-      <Name />
-      <Intro />
-      <Films />
-      <Fake />
-      <Painting />
-      <Year />
-      <Pooja />
-      <IGTV1 />
-      <IGTV2 />
-      <Slant />
-      <Contact />
-    </Wrapper>
+    <>
+      <Head>
+        <title>Adithi Chandrashekar</title>
+        <meta name="description" content="My portfolio" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="robots" content="index, archive" />
+      </Head>
+      <Wrapper condition={isMobile} wrapper1={mobile} wrapper2={desktop}>
+        <Name />
+        <Intro />
+        <Films />
+        <Fake />
+        <Painting />
+        <Year />
+        <Pooja />
+        <IGTV1 />
+        <IGTV2 />
+        <Slant />
+        <Contact />
+      </Wrapper>
+    </>
   );
 }
