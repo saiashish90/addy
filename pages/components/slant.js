@@ -15,7 +15,7 @@ export default function tenth() {
             loading="lazy"
           />
         </div>
-        <img src="10th-circles.svg" alt="circles" />
+        <img width="79.60px" height="100px" src="10th-circles.svg" alt="circles" />
       </FadeIn>
       <FadeIn className={slant.text}>
         <span>

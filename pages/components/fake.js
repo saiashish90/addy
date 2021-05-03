@@ -26,7 +26,7 @@ export default function fourth() {
         <div className={fake.linemobile}></div>
       </FadeIn>
       <FadeIn className={fake.img}>
-        <img src="4th-lines.svg" alt="lines" />
+        <img width="180px" height="100px" src="4th-lines.svg" alt="lines" />
       </FadeIn>
     </div>
   );

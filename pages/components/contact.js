@@ -27,7 +27,13 @@ export default function eleventh() {
           <img width="90px" height="100px" src="8th-lines.svg" alt="lines" loading="lazy" />
           <img width="90px" height="100px" src="8th-lines.svg" alt="lines" loading="lazy" />
         </div>
-        <img src="11th-addy.jpeg" alt="adithi chandrashekar" loading="lazy" />
+        <img
+          width="802.567px"
+          height="451.167px"
+          src="11th-addy.jpeg"
+          alt="adithi chandrashekar"
+          loading="lazy"
+        />
         <div className={contact.vecbottom}>
           <img width="90px" height="100px" src="8th-lines.svg" alt="lines" loading="lazy" />
           <img width="90px" height="100px" src="8th-lines.svg" alt="lines" loading="lazy" />

@@ -12,7 +12,7 @@ export default function ninth() {
         </p>
       </FadeIn>
       <FadeIn className={igtv.video}>
-        <img src="9th-circles.svg" alt="circle" />
+        <img width="84.29px" height="100px" src="9th-circles.svg" alt="circle" />
         <div className={igtv.ratio}>
           <iframe
             title="drive video player for igtv2"

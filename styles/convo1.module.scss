@@ -27,6 +27,7 @@
     img {
       align-self: start;
       width: 40px;
+      height: calc(40px / 1.039);
       transform: translate(-80%, 10%);
     }
     iframe {

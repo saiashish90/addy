@@ -11,7 +11,7 @@ export default function third() {
         <span> current</span>
       </FadeIn>
       <FadeIn>
-        <img className={films.img} src="3rd-films.svg" alt="line" />
+        <img width="102.96px" height="10px" className={films.img} src="3rd-films.svg" alt="line" />
       </FadeIn>
     </div>
   );

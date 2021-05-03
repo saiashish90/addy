@@ -32,8 +32,10 @@
   .img {
     margin-top: 0.6rem;
     width: 20vw;
+    height: calc(20vw / 10.2996);
     @include xs {
       width: 45vw;
+      height: calc(45vw / 10.2996);
     }
   }
 }

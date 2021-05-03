@@ -67,6 +67,7 @@
     }
     img {
       width: 1vw;
+      height: calc(1vw * 1 / 0.8429);
       align-self: flex-end;
       transform: scale(5, 5) rotate(130deg) translate(-0%, -20%);
     }

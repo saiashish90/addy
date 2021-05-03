@@ -6,7 +6,7 @@ export default function fifth() {
       <FadeIn className={convo.container}>
         <span>CONVO 1: Ft Krittika Chillal </span>
         <div className={convo.video}>
-          <img src="5th-lines.svg" alt="lines" />
+          <img width="103.9px" height="100px" src="5th-lines.svg" alt="lines" />
           <iframe
             title="drive video player for convo"
             src="https://drive.google.com/file/d/1qoLWYhcvh_LiDJKb9F8EWG7LX4hrZoOD/preview"

@@ -159,11 +159,11 @@
     align-items: center;
     flex-direction: column;
     width: 60%;
+    height: auto;
     padding: 2vw;
     @include sm {
       width: 100%;
-      height: auto;
-      padding: 0rem;
+      padding: 1rem;
       margin-bottom: 2vw;
     }
     .vectop {
@@ -194,6 +194,7 @@
         0 0px 33.4px -10px rgba(0, 0, 0, 0.058), 0 0px 80px -10px rgba(0, 0, 0, 0.08);
 
       width: 100%;
+      object-fit: cover;
     }
     .vecbottom {
       display: flex;
