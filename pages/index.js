@@ -1,4 +1,4 @@
-import Head from "next/head";
+import { Html, Head } from "next/head";
 // Components
 import Name from "./components/name";
 import Intro from "./components/intro";
@@ -23,6 +23,7 @@ export default function Home() {
   const mobile = (children) => <Smooth ease={0.5}>{children}</Smooth>;
   return (
     <>
+      <Html lang="en" />
       <Head>
         <title>Adithi Chandrashekar</title>
         <meta name="description" content="My portfolio" />
