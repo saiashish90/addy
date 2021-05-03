@@ -172,6 +172,7 @@
       width: 100%;
       img:nth-child(1) {
         width: 1vw;
+        height: calc(1vw * 1 / 0.9);
         transform: scale(3, 3) translate(-30%, -10%) rotate(-90deg);
         @include xs {
           transform: scale(5, 5) translate(-30%, -10%) rotate(-90deg);
@@ -179,6 +180,7 @@
       }
       img:nth-child(2) {
         width: 1vw;
+        height: calc(1vw * 1 / 0.9);
         transform: scale(3, 3) translate(45%, 0%);
         @include xs {
           transform: scale(5, 5) translate(45%, 0%);
@@ -199,6 +201,7 @@
       width: 100%;
       img:nth-child(1) {
         width: 1vw;
+        height: calc(1vw * 1 / 0.9);
         transform: scale(3, 3) translate(-40%, 0%) rotate(180deg);
         @include xs {
           transform: scale(5, 5) translate(-40%, 0%) rotate(180deg);
@@ -206,6 +209,7 @@
       }
       img:nth-child(2) {
         width: 1vw;
+        height: calc(1vw * 1 / 0.9);
         transform: scale(3, 3) translate(40%, 0%) rotateX(180deg);
         @include xs {
           transform: scale(5, 5) translate(40%, 0%) rotateX(180deg);

@@ -7,7 +7,7 @@ export default function eight() {
         <span>Promotional video for IGTV</span>
       </FadeIn>
       <FadeIn className={igtv.video}>
-        <img src="8th-lines.svg" alt="lines" />
+        <img width="90px" height="100px" src="8th-lines.svg" alt="lines" />
         <video src="videos/igtv1.mp4" controls loading="lazy" />
         <div className={igtv.line}></div>
       </FadeIn>

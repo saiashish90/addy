@@ -24,6 +24,7 @@
     }
     .img_top {
       width: 12vw;
+      height: calc(12vw / 6.52);
       transform: translate(-30%, 50%) rotate(-22deg);
       z-index: 2;
     }
@@ -42,6 +43,7 @@
     .img_bottom {
       align-self: flex-end;
       width: 12vw;
+      height: calc(12vw / 6.52);
       transform: translate(30%, -50%) rotate(-22deg);
       z-index: 2;
     }

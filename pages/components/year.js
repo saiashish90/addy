@@ -4,7 +4,13 @@ export default function sixth() {
   return (
     <div className={year.container}>
       <FadeIn className={year.video}>
-        <img className={year.img_top} src="1st-lines.svg" alt="lines" />
+        <img
+          width="100px"
+          height="15.32px"
+          className={year.img_top}
+          src="1st-lines.svg"
+          alt="lines"
+        />
         <div className={year.ratio}>
           <iframe
             title="drive video player for 1 year video"
@@ -14,7 +20,13 @@ export default function sixth() {
             loading="lazy"
           />
         </div>
-        <img className={year.img_bottom} src="1st-lines.svg" alt="lines" />
+        <img
+          width="100px"
+          height="15.32px"
+          className={year.img_bottom}
+          src="1st-lines.svg"
+          alt="lines"
+        />
       </FadeIn>
       <FadeIn className={year.text}>
         <div className={year.line}></div>

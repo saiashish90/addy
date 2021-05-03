@@ -26,11 +26,13 @@
     width: 100%;
     img {
       height: 3vw;
+      width: calc(3vw / 0.9);
       align-self: flex-end;
-      transform: translate(-700%, 20%);
+      transform: translate(-550%, 20%);
       @include sm {
         height: 8vw;
-        transform: translate(40%, 20%);
+        width: calc(3vw / 0.9);
+        transform: translate(-45%, 46%);
       }
     }
     video {
