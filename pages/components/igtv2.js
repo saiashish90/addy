@@ -19,6 +19,7 @@ export default function ninth() {
             src="https://drive.google.com/file/d/1Cv9xUJ4ZudLN_W00tsifh0L9IKeNSXoK/preview"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             frameBorder="0"
+            loading="lazy"
           />
         </div>
       </FadeIn>

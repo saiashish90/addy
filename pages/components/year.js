@@ -11,6 +11,7 @@ export default function sixth() {
             src="https://drive.google.com/file/d/1UxCGhQgTg56Rw-8UGRVU6xV2yeG2bAjt/preview"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             frameBorder="0"
+            loading="lazy"
           />
         </div>
         <img className={year.img_bottom} src="1st-lines.svg" alt="lines" />

@@ -21,6 +21,7 @@ export default function seventh() {
             src="https://drive.google.com/file/d/1VcDmGLx850xF5oKrFI9XJPfq4gAy64Zt/preview"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             frameBorder="0"
+            loading="lazy"
           />
         </div>
       </FadeIn>

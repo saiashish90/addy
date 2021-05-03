@@ -12,6 +12,7 @@ export default function fifth() {
             src="https://drive.google.com/file/d/1qoLWYhcvh_LiDJKb9F8EWG7LX4hrZoOD/preview"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             frameBorder="0"
+            loading="lazy"
           />
           <div className={convo.line}></div>
         </div>

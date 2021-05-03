@@ -24,13 +24,13 @@ export default function eleventh() {
         }}></Modal>
       <div className={contact.picture}>
         <div className={contact.vectop}>
-          <img src="8th-lines.svg" alt="lines" />
-          <img src="8th-lines.svg" alt="lines" />
+          <img src="8th-lines.svg" alt="lines" loading="lazy" />
+          <img src="8th-lines.svg" alt="lines" loading="lazy" />
         </div>
-        <img src="11th-addy.jpeg" alt="adithi chandrashekar" />
+        <img src="11th-addy.jpeg" alt="adithi chandrashekar" loading="lazy" />
         <div className={contact.vecbottom}>
-          <img src="8th-lines.svg" alt="lines" />
-          <img src="8th-lines.svg" alt="lines" />
+          <img src="8th-lines.svg" alt="lines" loading="lazy" />
+          <img src="8th-lines.svg" alt="lines" loading="lazy" />
         </div>
       </div>
     </div>

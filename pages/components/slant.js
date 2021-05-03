@@ -11,7 +11,9 @@ export default function tenth() {
             title="YouTube video player for slant media"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen></iframe>
+            allowFullScreen
+            loading="lazy"
+          />
         </div>
         <img src="10th-circles.svg" alt="circles" />
       </FadeIn>

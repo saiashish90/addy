@@ -8,7 +8,7 @@ export default function eight() {
       </FadeIn>
       <FadeIn className={igtv.video}>
         <img src="8th-lines.svg" alt="lines" />
-        <video src="videos/igtv1.mp4" controls />
+        <video src="videos/igtv1.mp4" controls loading="lazy" />
         <div className={igtv.line}></div>
       </FadeIn>
       <FadeIn className={igtv.p}>
