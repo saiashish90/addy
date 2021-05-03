@@ -1,12 +1,13 @@
 import { useState } from "react";
 import contact from "../../styles/contact.module.scss";
+import FadeIn from "./FadeIn";
 import Modal from "./modal";
 
 export default function eleventh() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className={[contact.container]}>
+    <FadeIn className={[contact.container]}>
       <div className={contact.text}>
         <span className={contact.h1}>Work with me</span>
         <span className={contact.h2}>Email</span>
@@ -39,6 +40,6 @@ export default function eleventh() {
           <img width="90px" height="100px" src="8th-lines.svg" alt="lines" loading="lazy" />
         </div>
       </div>
-    </div>
+    </FadeIn>
   );
 }
