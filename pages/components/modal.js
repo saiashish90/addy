@@ -1,6 +1,6 @@
 import popup from "../../styles/modal.module.scss";
 import { useDisableScroll } from "../../hooks/useDisableScroll";
-export default function modal({ isOpen, close }) {
+export default function modal({ isOpen, close, flash }) {
   useDisableScroll(isOpen);
   if (!isOpen) return null;
   return (
@@ -19,15 +19,17 @@ export default function modal({ isOpen, close }) {
                 "Content-Type": "application/json",
               },
               body: data,
+            }).then((res) => {
+              flash(res.status);
+              close();
             });
-            close();
           }}
           className={popup.form}>
           <span>Email Me</span>
           <div className={popup.inputgroup}>
-            <input id="name" name="name" type="text" placeholder="Name" />
-            <input id="email" name="email" type="email" placeholder="Email" />
-            <input id="message" name="message" type="text" placeholder="Message" />
+            <input id="name" name="name" type="text" placeholder="Name" required />
+            <input id="email" name="email" type="email" placeholder="Email" required />
+            <textarea id="message" name="message" type="text" placeholder="Message" required />
           </div>
           <button className={popup.send}>
             <span className={popup.but}>Send</span>

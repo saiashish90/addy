@@ -5,7 +5,21 @@ import Modal from "./modal";
 
 export default function eleventh() {
   const [isOpen, setIsOpen] = useState(false);
-
+  const [flash, setFlash] = useState(0);
+  let flashmessage;
+  if (flash == 200) {
+    flashmessage = <FadeIn className={contact.flash}>Message Sent</FadeIn>;
+  } else if (flash == 0) {
+    flashmessage = null;
+  } else {
+    flashmessage = <FadeIn className={contact.flash}>Failed to send</FadeIn>;
+  }
+  const displayFlash = (status) => {
+    setFlash(200);
+    setTimeout(() => {
+      setFlash(0);
+    }, 2000);
+  };
   return (
     <FadeIn className={[contact.container]}>
       <div className={contact.text}>
@@ -22,7 +36,9 @@ export default function eleventh() {
         isOpen={isOpen}
         close={() => {
           setIsOpen(false);
-        }}></Modal>
+        }}
+        flash={displayFlash}
+      />
       <div className={contact.picture}>
         <div className={contact.vectop}>
           <img width="90px" height="100px" src="8th-lines.svg" alt="lines" loading="lazy" />
@@ -40,6 +56,7 @@ export default function eleventh() {
           <img width="90px" height="100px" src="8th-lines.svg" alt="lines" loading="lazy" />
         </div>
       </div>
+      {flashmessage}
     </FadeIn>
   );
 }
