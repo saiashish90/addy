@@ -1,5 +1,5 @@
-import convo from "../../styles/convo1.module.scss";
-import FadeIn from "./FadeIn";
+import convo from "./convo1.module.scss";
+import FadeIn from "../FadeIn";
 export default function fifth() {
   return (
     <div className={convo.container}>

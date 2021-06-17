@@ -1,5 +1,5 @@
-import igtv from "../../styles/igtv1.module.scss";
-import FadeIn from "./FadeIn";
+import igtv from "./igtv1.module.scss";
+import FadeIn from "../FadeIn";
 export default function eight() {
   return (
     <div className={igtv.container}>

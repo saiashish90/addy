@@ -1,5 +1,5 @@
-import year from "../../styles/year.module.scss";
-import FadeIn from "./FadeIn";
+import year from "./year.module.scss";
+import FadeIn from "../FadeIn";
 export default function sixth() {
   return (
     <div className={year.container}>

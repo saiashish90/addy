@@ -1,5 +1,5 @@
-import convo from "../../styles/convo2.module.scss";
-import FadeIn from "./FadeIn";
+import convo from "./convo2.module.scss";
+import FadeIn from "../FadeIn";
 export default function seventh() {
   return (
     <div className={convo.container}>

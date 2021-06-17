@@ -1,6 +1,9 @@
 @import "./partials/_mediaquery.scss";
 @import "./partials/_variables.scss";
 @import "./partials/fonts";
+.section {
+  scroll-snap-align: start;
+}
 .container {
   background-color: $bg-dark;
   display: grid;

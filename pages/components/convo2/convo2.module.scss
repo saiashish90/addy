@@ -2,6 +2,7 @@
 @import "./partials/mediaquery";
 @import "./partials/variables";
 .container {
+  scroll-snap-align: start;
   display: grid;
   grid-template-columns: 35% 65%;
   align-items: center;
@@ -46,7 +47,7 @@
       text-align: center;
       padding: 0.5rem;
       .inner {
-        background-image: url("../public/7th-circle.svg");
+        background-image: url("../../../public/7th-circle.svg");
         background-repeat: no-repeat;
         background-position: left center;
         background-size: contain;

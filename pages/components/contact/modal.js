@@ -1,5 +1,5 @@
-import popup from "../../styles/modal.module.scss";
-import { useDisableScroll } from "../../hooks/useDisableScroll";
+import popup from "./modal.module.scss";
+import { useDisableScroll } from "../../../hooks/useDisableScroll";
 export default function modal({ isOpen, close, flash }) {
   useDisableScroll(isOpen);
   if (!isOpen) return null;

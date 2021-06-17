@@ -1,5 +1,5 @@
-import films from "../../styles/films.module.scss";
-import FadeIn from "./FadeIn";
+import films from "./films.module.scss";
+import FadeIn from "../FadeIn";
 export default function third() {
   return (
     <div className={films.container}>

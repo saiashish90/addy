@@ -1,9 +1,9 @@
-import intro from "../../styles/intro.module.scss";
-import FadeIn from "./FadeIn";
+import intro from "./intro.module.scss";
+import FadeIn from "../FadeIn";
 import Image from "next/image";
 export default function second() {
   return (
-    <section>
+    <section className={intro.section}>
       <div className={intro.container}>
         <FadeIn className={intro.picture}>
           <div className={intro.line}></div>

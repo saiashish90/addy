@@ -1,5 +1,5 @@
-import name from "../../styles/name.module.scss";
-import FadeIn from "./FadeIn";
+import name from "./name.module.scss";
+import FadeIn from "../FadeIn";
 export default function home() {
   return (
     <div className={name.container}>

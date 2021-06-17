@@ -1,6 +1,6 @@
 import { useState } from "react";
-import contact from "../../styles/contact.module.scss";
-import FadeIn from "./FadeIn";
+import contact from "./contact.module.scss";
+import FadeIn from "../FadeIn";
 import Modal from "./modal";
 
 export default function eleventh() {
@@ -21,7 +21,7 @@ export default function eleventh() {
     }, 2000);
   };
   return (
-    <FadeIn className={[contact.container]}>
+    <FadeIn className={contact.container}>
       <div className={contact.text}>
         <span className={contact.h1}>Work with me</span>
         <span className={contact.h2}>Email</span>

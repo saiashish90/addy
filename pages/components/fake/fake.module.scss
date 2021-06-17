@@ -2,6 +2,7 @@
 @import "./partials/mediaquery";
 @import "./partials/variables";
 .container {
+  scroll-snap-align: start;
   background: white;
   display: grid;
   grid-template-columns: 1fr 1fr;

@@ -1,5 +1,5 @@
-import slant from "../../styles/slant.module.scss";
-import FadeIn from "./FadeIn";
+import slant from "./slant.module.scss";
+import FadeIn from "../FadeIn";
 export default function tenth() {
   return (
     <div className={slant.container}>

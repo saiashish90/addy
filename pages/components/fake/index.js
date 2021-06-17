@@ -1,5 +1,5 @@
-import fake from "../../styles/fake.module.scss";
-import FadeIn from "./FadeIn";
+import fake from "./fake.module.scss";
+import FadeIn from "../FadeIn";
 export default function fourth() {
   return (
     <div className={fake.container}>
